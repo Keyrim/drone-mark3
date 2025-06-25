@@ -1,0 +1,32 @@
+{
+    "hreader": {
+        "prefix": "header",
+        "body": [
+            "/**",
+            " * @file ${TM_FILENAME}",
+            " * @brief ${2:brief description}",
+            " * @author Théo MAGNE",
+            " * @date ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+            " */",
+            "",
+            "#pragma once",
+            "",
+        ],
+        "description": "header"
+    },
+    "source": {
+        "prefix": "source",
+        "body": [
+            "/**",
+            " * @file ${TM_FILENAME}",
+            " * @author Théo MAGNE",
+            " * @date ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+            " * @see ${TM_FILENAME_BASE}.hpp",
+            " */",
+            "",
+            "#include \"${TM_FILENAME_BASE}.hpp\"",
+            "",
+        ],
+        "description": "source"
+    }
+}
