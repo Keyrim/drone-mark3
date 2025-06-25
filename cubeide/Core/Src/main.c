@@ -37,6 +37,10 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
+#ifdef USE_NON_CUBEIDE_CODE
+#include "mark3_main.hpp"
+#endif /* USE_NON_CUBEIDE_CODE */
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -117,6 +121,9 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
+#ifdef USE_NON_CUBEIDE_CODE
+  mark3_main();
+#endif /* USE_NON_CUBEIDE_CODE */
 
   /* USER CODE END 2 */
 

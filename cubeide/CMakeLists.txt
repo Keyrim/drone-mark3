@@ -3,8 +3,7 @@ set(CUBE_CORE_DIR ${CUBE_DIR}/Core)
 set(CUBE_DRIVERS_DIR ${CUBE_DIR}/Drivers)
 
 # Include the core and drivers directories
-set(INCLUDE_PATH_DIRS
-    ${INCLUDE_PATH_DIRS}
+LIST(APPEND INCLUDE_PATH_DIRS
     ${CUBE_CORE_DIR}/Inc
     ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Inc
     ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Inc/Legacy
@@ -21,8 +20,7 @@ file(GLOB_RECURSE
     CUBE_DRIVERS_FILES
     ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Src/*.c
 )
-set(SRCS_FILES
-    ${SRCS_FILES}
+LIST(APPEND SRCS_FILES
     ${CUBE_CORE_FILES}
     ${CUBE_DRIVERS_FILES}
     ${CUBE_CORE_DIR}/Startup/startup_stm32f405rgtx.s

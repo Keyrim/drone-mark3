@@ -10,9 +10,10 @@
             "name": "default",
             "hidden": true,
             "generator": "Ninja",
-            "binaryDir": "${sourceDir}/build/${presetName}",
+            "binaryDir": "${sourceDir}/build",
             "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         },

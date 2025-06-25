@@ -1,1 +1,5 @@
+# Build folder
 build
+
+# Cache folder, used by clangd for example
+.cache

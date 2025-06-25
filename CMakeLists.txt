@@ -23,6 +23,7 @@ set(EXECUTABLE mark3_app)
 
 # Include every subdirectory
 include (${PROJ_PATH}/cubeide/CMakeLists.txt)
+include (${PROJ_PATH}/src/CMakeLists.txt)
 
 # Compiler flag for ou app
 LIST(APPEND C_FLAGS
