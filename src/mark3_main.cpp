@@ -5,11 +5,14 @@
  * @see mark3_main.hpp
  */
 
+#include "bsp.h"
+
 #include "mark3_main.hpp"
 
 void mark3_main(void)
 {
     // Initialize
+    bsp_init();
 
     // Start things
 
@@ -17,5 +20,7 @@ void mark3_main(void)
     for (;;)
     {
         // Do stuff
+        bsp_puts("Hello, Mark3!\n", 15);
+        bsp_delay_ms(1000);
     }
 }

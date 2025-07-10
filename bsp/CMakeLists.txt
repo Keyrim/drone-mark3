@@ -1,0 +1,13 @@
+set(BSP_DIR ${CMAKE_CURRENT_LIST_DIR})
+
+LIST(APPEND INCLUDE_PATH_DIRS
+    ${INCLUDE_PATH_DIRS}
+    ${BSP_DIR}
+)
+
+LIST(APPEND SRCS_FILES
+    ${BSP_DIR}/bsp.c
+    ${BSP_DIR}/bsp_uart.c
+)
+
+
