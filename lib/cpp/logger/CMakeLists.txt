@@ -1,0 +1,13 @@
+set(LOGGER_DIR ${CMAKE_CURRENT_LIST_DIR})
+
+set(INCLUDE_PATH_DIRS
+    ${INCLUDE_PATH_DIRS}
+    ${LOGGER_DIR}
+)
+
+set(SRCS_FILES
+    ${SRCS_FILES}
+    ${LOGGER_DIR}/logger.cpp
+)
+
+

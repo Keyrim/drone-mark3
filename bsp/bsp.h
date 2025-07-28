@@ -61,7 +61,7 @@ extern "C"
     /**
      * @brief Log a message to the BSP log
      */
-    void bsp_puts(const char *str, int len);
+    void log_puts(const char *str, int len);
 
 #ifdef __cplusplus
 }

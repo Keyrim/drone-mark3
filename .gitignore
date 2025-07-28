@@ -3,3 +3,6 @@ build
 
 # Cache folder, used by clangd for example
 .cache
+
+# i put "touch" file where i want folder to be non empty
+touch

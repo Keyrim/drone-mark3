@@ -86,7 +86,7 @@ uint32_t bsp_get_time_us(void)
     return t_us;
 }
 
-void bsp_puts(const char *str, int len)
+void log_puts(const char *str, int len)
 {
     UART_transmit(BSP_LOG_UART, (uint8_t *)str, len);
 }

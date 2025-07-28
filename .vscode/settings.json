@@ -13,9 +13,23 @@
         "editor.semanticHighlighting.enabled": true,
         "editor.stickyScroll.defaultModel": "foldingProviderModel",
         "editor.suggest.insertMode": "replace",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.rulers": [
+            80
+        ]
     },
+    "C_Cpp.intelliSenseEngine": "default",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "clangd.enable": false,
+    "files.associations": {
+        "cstring": "cpp",
+        "cstdarg": "cpp",
+        "cstdio": "cpp",
+        "cstdint": "cpp"
+    },
+    "vscode-serial-monitor.customBaudRates": [
+        1000000
+    ]
 }

@@ -13,7 +13,7 @@
             "servertype": "stlink",
             "device": "STM32F405RG",
             "interface": "swd",
-            "runToEntryPoint": "main",
+            // "runToEntryPoint": "main",
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4
