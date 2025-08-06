@@ -2,7 +2,7 @@
     "version": 6,
     "cmakeMinimumRequired": {
         "major": 3,
-        "minor": 23,
+        "minor": 25,
         "patch": 0
     },
     "configurePresets": [
@@ -13,12 +13,11 @@
             "binaryDir": "${sourceDir}/build",
             "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         },
         {
-            "name": "debug",
+            "name": "mark3",
             "inherits": "default"
         }
     ]

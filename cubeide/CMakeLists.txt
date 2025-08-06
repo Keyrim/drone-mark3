@@ -5,9 +5,9 @@ set(CUBE_DRIVERS_DIR ${CUBE_DIR}/Drivers)
 # Include the core and drivers directories
 LIST(APPEND INCLUDE_PATH_DIRS
     ${CUBE_CORE_DIR}/Inc
-    ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Inc
-    ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Inc/Legacy
-    ${CUBE_DRIVERS_DIR}/CMSIS/Device/ST/STM32F4XX/Include
+    ${CUBE_DRIVERS_DIR}/STM32F4xx_HAL_Driver/Inc
+    ${CUBE_DRIVERS_DIR}/STM32F4xx_HAL_Driver/Inc/Legacy
+    ${CUBE_DRIVERS_DIR}/CMSIS/Device/ST/STM32F4xx/Include
     ${CUBE_DRIVERS_DIR}/CMSIS/Include
 )
 
@@ -18,7 +18,7 @@ file(GLOB_RECURSE
 )
 file(GLOB_RECURSE
     CUBE_DRIVERS_FILES
-    ${CUBE_DRIVERS_DIR}/STM32F4XX_HAL_Driver/Src/*.c
+    ${CUBE_DRIVERS_DIR}/STM32F4xx_HAL_Driver/Src/*.c
 )
 LIST(APPEND SRCS_FILES
     ${CUBE_CORE_FILES}

@@ -1,0 +1,60 @@
+{
+    "name": "mark3-devcontainer",
+    "privileged": true,
+    "build": {
+        "dockerfile": "arm-none-eabi.Dockerfile",
+        "context": "..",
+        "target": "arm_none_eabi-dev"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // C/C++ settings
+                "files.associations": {
+                    "*.h": "c"
+                },
+                "[c]": {
+                    "editor.defaultFormatter": "ms-vscode.cpptools",
+                    "editor.rulers": [
+                        80
+                    ],
+                    "editor.formatOnSave": true
+                },
+                // Debug
+                "cortex-debug.armToolchainPath": "/opt/gnu_arm/13.2.rel1/bin",
+                // General settings
+                "cmake.configureOnOpen": true,
+                "C_Cpp.intelliSenseEngine": "default",
+                "extensions.verifySignature": false,
+                "clangd.enable": false
+            },
+            "extensions": [
+                "zixuanwang.linkerscript",
+                "dan-c-underwood.arm",
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "mutantdino.resourcemonitor",
+                "marus25.cortex-debug",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.vscode-serial-monitor",
+                "twxs.cmake",
+                "cheshirekow.cmake-format",
+                "josetr.cmake-language-support-vscode",
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "qhoekman.language-plantuml",
+                "myml.vscode-markdown-plantuml-preview",
+                "jebbs.plantuml",
+                "Mebrahtom.plantumlpreviewer",
+                "yzane.markdown-pdf",
+                "usernamehw.errorlens",
+                "janjoerke.jenkins-pipeline-linter-connector"
+            ]
+        }
+    },
+    // Apply the git patch required by esp adf as root
+    "runArgs": [
+        "-v",
+        "/dev:/dev"
+    ]
+}

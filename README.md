@@ -13,8 +13,8 @@ This is a student project for the course "State Estimation and Control" at the U
 ## Projet roadmap / timeline
 
 - [x] [25/06/2025] Right click, new project!
-- [ ] Setup base project structure with CMake and C++.
-- [ ] Setup devcontainer setup for perfect development experience :smile:
+- [x] Setup base project structure with CMake and C++.
+- [x] [06/08/20525] Setup devcontainer setup for perfect development experience :smile: (gdb to test)
 - [ ] Implement gyro driver
 - [ ] Implement simple attitude estimator using quaternions representation (integrate Eigen library).
 - [ ] Implement EKF for attitude estimation with gyroscope and accelerometer (integrate tinyEKF library).
