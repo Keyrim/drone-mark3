@@ -136,9 +136,18 @@ RUN curl \
     -L ${JLINK_LINK} \
     -d "accept_license_agreement=accepted" \
     -o /tmp/jlink.deb
-# Install JLink
-RUN sudo service udev restart && \
-    sudo dpkg -i /tmp/jlink.deb || true
+
+# We don't install the JLink software right away because it will fail
+# to update the udev rules for some reason:
+# 7.676 Unpacking jlink (8.24.0) ...
+# 9.131 Setting up jlink (8.24.0) ...
+# 9.149 Updating udev rules via udevadm...
+# 9.152 Failed to reload udevadm rules, retrying...
+# 9.160 Failed to send reload request: No such file or directory
+# 9.160 Error: Failed to update udevadm rules.
+#
+# Add an alias to the bashrc to install it manually later
+RUN echo "alias jlink-install='sudo apt install -y /tmp/jlink.deb'" >> /home/$USERNAME/.bashrc
 
 USER $USERNAME
 CMD ["/bin/bash"]

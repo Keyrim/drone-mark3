@@ -48,7 +48,9 @@
                 "Mebrahtom.plantumlpreviewer",
                 "yzane.markdown-pdf",
                 "usernamehw.errorlens",
-                "janjoerke.jenkins-pipeline-linter-connector"
+                "janjoerke.jenkins-pipeline-linter-connector",
+                "donjayamanne.githistory",
+                "mhutchie.git-graph"
             ]
         }
     },

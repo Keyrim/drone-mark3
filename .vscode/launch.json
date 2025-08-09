@@ -18,9 +18,21 @@
                 "enabled": true,
                 "samplesPerSecond": 4
             },
-            // "svdFile": "STM32F302.svd",
             "v1": false,
-            "showDevDebugOutput": "both",
+        },
+        {
+            "name": "jlink debug",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "servertype": "jlink",
+            "device": "STM32F405RG",
+            "interface": "swd",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
         }
     ]
 }
